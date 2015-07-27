@@ -1,2 +1,3 @@
 # liberty docker image on openshift
+-Xjit:disableStringpeepholes
 -Xshareclasses:nonfatal
