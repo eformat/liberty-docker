@@ -10,9 +10,6 @@ ADD server.xml /opt/ibm/wlp/usr/servers/defaultServer/
 ADD jvm.options /opt/ibm/wlp/usr/servers/defaultServer/
 ENV LICENSE accept
 
-ENV USERNAME root
-ENV TZ Pacific/Auckland
-
 EXPOSE 9080
 
 ENTRYPOINT ["liberty-run"]
