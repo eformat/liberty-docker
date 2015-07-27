@@ -7,6 +7,7 @@
 FROM websphere-liberty
 ADD Sample1.war /opt/ibm/wlp/usr/servers/defaultServer/dropins/
 ADD server.xml /opt/ibm/wlp/usr/servers/defaultServer/
+ADD jvm.options /opt/ibm/wlp/usr/servers/defaultServer/
 ENV LICENSE accept
 
 EXPOSE 9080
