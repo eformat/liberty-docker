@@ -1,18 +1,19 @@
 Liberty Docker
 ==============
 
-Because some just must use Websphere ...
+Because some must use Websphere ...
 
-###
-    cd ~/src/liberty-docker/
+### checkout
+    git clone https://github.com/eformat/liberty-docker
+    cd ~/liberty-docker/
 
-###
+### build docker image
     docker build -t app .
 
-###
+### run app
     docker run -d -p 9080:9080 -p 443:9443 app
 
-###
+### test app
     http://localhost:9080/Sample1/SimpleServlet
 
 And others choose OpenShift ...
