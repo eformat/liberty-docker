@@ -10,8 +10,6 @@ ADD server.xml /opt/ibm/wlp/usr/servers/defaultServer/
 ADD jvm.options /opt/ibm/wlp/usr/servers/defaultServer/
 ENV LICENSE accept
 
-#ENV IBM_JAVA_OPTIONS -Xnocompressedrefs 
-
 RUN chmod -R 777 /opt/ibm/wlp/usr/servers/defaultServer
 
 EXPOSE 9080

@@ -1,4 +1,5 @@
 # liberty docker image on openshift
+# need the shareclasses:none else jvm fails to start
 -Xmx1024m
 -Xgcpolicy:optthruput
 -Xshareclasses:none
