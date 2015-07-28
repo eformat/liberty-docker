@@ -14,3 +14,9 @@ Because some just must use Websphere ...
 
 ###
     http://localhost:9080/Sample1/SimpleServlet
+
+And others choose OpenShift ...
+
+###
+    oc new-project liberty --display-name="Liberty" --description='WAS Liberty Profile Servlet Container'
+    oc new-app https://github.com/eformat/liberty-docker#master --name=liberty --strategy=docker --name=liberty
