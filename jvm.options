@@ -1,3 +1,4 @@
 # liberty docker image on openshift
 -Xmx1024m
 -Xgcpolicy:optthruput
+-Xshareclasses:none
