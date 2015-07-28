@@ -13,6 +13,7 @@ ENV LICENSE accept
 #ENV IBM_JAVA_OPTIONS -Xnocompressedrefs 
 
 RUN chmod 777 /opt/ibm/wlp/usr/servers/defaultServer
+RUN chmod 777 /opt/ibm/wlp/usr/servers/defaultServer/workarea
 
 EXPOSE 9080
 
