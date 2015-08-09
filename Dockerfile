@@ -2,7 +2,7 @@
 # cd ~/src/liberty-docker/
 # docker build -t app .
 # docker run -d -p 9080:9080 -p 443:9443 app
-# curl http://localhost:9080/Sample1/SimpleServlet
+# curl http://localhost:9080/SimpleServlet/SimpleServlet
 #
 FROM websphere-liberty
 
