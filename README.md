@@ -18,7 +18,7 @@ Built from https://hub.docker.com/_/websphere-liberty/
 ### test app
     http://localhost:9080/Sample1/SimpleServlet
 
-And others choose OpenShift ...
+### And others choose OpenShift ...
 
 ###
     oc new-project liberty --display-name="Liberty" --description='WAS Liberty Profile Servlet Container'
