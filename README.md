@@ -3,6 +3,8 @@ Liberty Docker
 
 Because some must use Websphere ...
 
+Built from https://hub.docker.com/_/websphere-liberty/
+
 ### checkout
     git clone https://github.com/eformat/liberty-docker
     cd ~/liberty-docker/
