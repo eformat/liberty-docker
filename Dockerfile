@@ -4,14 +4,12 @@
 # docker run -d -p 9080:9080 -p 443:9443 app
 # curl http://localhost:9080/SimpleServlet/SimpleServlet
 #
-FROM websphere-liberty
-
+#FROM websphere-liberty
 FROM websphere-liberty:webProfile7
-ADD Sample1.war /config/dropins/
 
-#ADD target/SimpleServlet.war /opt/ibm/wlp/usr/servers/defaultServer/dropins/
-#ADD server.xml /opt/ibm/wlp/usr/servers/defaultServer/
-#ADD jvm.options /opt/ibm/wlp/usr/servers/defaultServer/
+ADD target/SimpleServlet.war /opt/ibm/wlp/usr/servers/defaultServer/dropins/
+ADD server.xml /opt/ibm/wlp/usr/servers/defaultServer/
+ADD jvm.options /opt/ibm/wlp/usr/servers/defaultServer/
 
 ENV LICENSE accept
 
