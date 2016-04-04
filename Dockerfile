@@ -17,7 +17,8 @@ EXPOSE 9080
 
 ENV PATH /opt/ibm/wlp/bin:$PATH
 
-ENTRYPOINT ["liberty-run"]
+#ENTRYPOINT ["liberty-run"]
+#ENTRYPOINT ["/opt/ibm/wlp/bin/server", "run", "defaultServer"]
 CMD ["/opt/ibm/wlp/bin/server", "run", "defaultServer"]
 
 # end
