@@ -14,6 +14,7 @@ ADD jvm.options /opt/ibm/wlp/usr/servers/defaultServer/
 ENV LICENSE accept
 
 RUN chmod -R 777 /opt/ibm/wlp/usr/servers/defaultServer
+RUN chmod -R 777 /opt/ibm/wlp/output/defaultServer
 
 EXPOSE 9080
 
