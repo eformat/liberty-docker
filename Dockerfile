@@ -16,6 +16,9 @@ ENV LICENSE accept
 RUN chmod -R 777 /opt/ibm/wlp/usr/servers/defaultServer
 RUN chmod -R 777 /opt/ibm/wlp/output/defaultServer
 
+RUN mkdir /logs
+RUN chmod -R 777 /logs
+
 EXPOSE 9080
 
 ENV PATH /opt/ibm/wlp/bin:$PATH
