@@ -15,7 +15,6 @@ RUN chmod -R 777 /opt/ibm/wlp/usr/servers/defaultServer
 
 EXPOSE 9080
 
-COPY liberty-run /opt/ibm/wlp/bin/
 ENV PATH /opt/ibm/wlp/bin:$PATH
 
 ENTRYPOINT ["liberty-run"]
