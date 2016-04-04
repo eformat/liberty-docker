@@ -6,9 +6,13 @@
 #
 FROM websphere-liberty
 
-ADD target/SimpleServlet.war /opt/ibm/wlp/usr/servers/defaultServer/dropins/
-ADD server.xml /opt/ibm/wlp/usr/servers/defaultServer/
-ADD jvm.options /opt/ibm/wlp/usr/servers/defaultServer/
+FROM websphere-liberty:webProfile7
+ADD Sample1.war /config/dropins/
+
+#ADD target/SimpleServlet.war /opt/ibm/wlp/usr/servers/defaultServer/dropins/
+#ADD server.xml /opt/ibm/wlp/usr/servers/defaultServer/
+#ADD jvm.options /opt/ibm/wlp/usr/servers/defaultServer/
+
 ENV LICENSE accept
 
 RUN chmod -R 777 /opt/ibm/wlp/usr/servers/defaultServer
