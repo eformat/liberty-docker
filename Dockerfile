@@ -19,7 +19,7 @@ RUN chmod -R 777 /opt/ibm/wlp/output/defaultServer
 RUN mkdir /logs
 RUN chmod -R 777 /logs
 
-EXPOSE 9080
+EXPOSE 8080
 
 ENV PATH /opt/ibm/wlp/bin:$PATH
 
